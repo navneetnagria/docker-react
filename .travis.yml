@@ -1,0 +1,10 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t navneetnagria/docker-react -f Dockerfile.dev .
+
+scripts:
+  - docker run navneetnagria/docker-react npm run test -- --coverage
+  
