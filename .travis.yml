@@ -7,4 +7,3 @@ before_install:
 
 scripts:
   - docker run navneetnagria/docker-react npm run test -- --coverage
-  
